@@ -34,7 +34,7 @@ class Colorchange extends Module
         }
 				/*$this->currencies = true;
 		$this->currencies_mode = 'checkbox';*/
-        $this->version = '3.6.0';
+        $this->version = '3.7.0';
         if (_PS_VERSION_ < '1.5') {
             require(_PS_MODULE_DIR_.$this->name.'/backward_compatibility/backward.php');
         }
@@ -42,8 +42,8 @@ class Colorchange extends Module
 
         parent::__construct();
 
-        $this->displayName = $this->l('Color change');
-        $this->description = $this->l('Change color of the theme');
+        $this->displayName = $this->l('Template Color change');
+        $this->description = $this->l('Change color of the theme  - www.catalogo-onlinersi.net');
         $path = dirname(__FILE__);
         if (strpos(__FILE__, 'Module.php') !== false) {
             $path .= '/../modules/'.$this->name;
@@ -70,11 +70,11 @@ class Colorchange extends Module
             return false;
         }
         if (!Configuration::updateValue(
-            'CHANGECOLOR_FONT','Noto Sans,sans-serif'
+            'CHANGECOLOR_FONT',''
 
         ) && Configuration::updateValue(
             'CHANGECOLOR_FONT',
-            'Noto Sans,sans-serif'
+            ''
         )
         ) {
             return false;
@@ -602,6 +602,12 @@ body#checkout .modal-content {
                 ),
                 'input' => array(
                     array(
+                        'type' => 'html',
+                        'label' => $this->l('BUTTONS'),
+                        'name' => '',
+
+                    ),
+                    array(
                         'type' => 'color',
                         'label' => $this->l('Buttons color / tabs'),
                         'name' => 'b',
@@ -617,6 +623,78 @@ body#checkout .modal-content {
                         'type' => 'color',
                         'label' => $this->l('Button text color'),
                         'name' => 'b2',
+
+                    ),
+                    array(
+                        'type' => 'html',
+                        'label' => $this->l('FOOTER'),
+                        'name' => '',
+
+                    ),
+                    array(
+                        'type' => 'color',
+                        'label' => $this->l('Footer color'),
+                        'name' => 'f',
+
+                    ),
+                    array(
+                        'type' => 'color',
+                        'label' => $this->l('Footer text color'),
+                        'name' => 'fc',
+
+                    ),
+                    array(
+                        'type' => 'color',
+                        'label' => $this->l('Footer link color'),
+                        'name' => 'fcl',
+
+                    ),
+                    array(
+                        'type' => 'html',
+                        'label' => $this->l('HEADER'),
+                        'name' => '',
+
+                    ),
+                    array(
+                        'type' => 'color',
+                        'label' => $this->l('Header color'),
+                        'name' => 'h',
+
+                    ),
+ array(
+                        'type' => 'color',
+                        'label' => $this->l('Top nav links color'),
+                        'name' => 'n',
+
+                    ),
+                    array(
+                        'type' => 'color',
+                        'label' => $this->l('Header nav background'),
+                        'name' => 'nav',
+
+                    ),
+                    array(
+                        'type' => 'color',
+                        'label' => $this->l('Header nav text color'),
+                        'name' => 'navc',
+
+                    ),
+                    array(
+                        'type' => 'color',
+                        'label' => $this->l('Menu font color'),
+                        'name' => 'menul',
+
+                    ),
+                    array(
+                        'type' => 'color',
+                        'label' => $this->l('SubMenu background color'),
+                        'name' => 'smenu',
+
+                    ),
+                    array(
+                        'type' => 'html',
+                        'label' => $this->l('OTHER'),
+                        'name' => '',
 
                     ),
  array(
@@ -643,18 +721,7 @@ body#checkout .modal-content {
                         'name' => 'lp',
 
                     ),
-                    array(
-                        'type' => 'color',
-                        'label' => $this->l('Menu font color'),
-                        'name' => 'menul',
 
-                    ),
-                    array(
-                        'type' => 'color',
-                        'label' => $this->l('SubMenu background color'),
-                        'name' => 'smenu',
-
-                    ),
                     array(
                         'type' => 'color',
                         'label' => $this->l('Social icons color'),
@@ -686,48 +753,8 @@ body#checkout .modal-content {
                         'name' => 'w',
 
                     ),
- array(
-                        'type' => 'color',
-                        'label' => $this->l('Header color'),
-                        'name' => 'h',
 
-                    ),
- array(
-                        'type' => 'color',
-                        'label' => $this->l('Top nav links color'),
-                        'name' => 'n',
 
-                    ),
-                    array(
-                        'type' => 'color',
-                        'label' => $this->l('Header nav background'),
-                        'name' => 'nav',
-
-                    ),
-                    array(
-                        'type' => 'color',
-                        'label' => $this->l('Header nav text color'),
-                        'name' => 'navc',
-
-                    ),
- array(
-                        'type' => 'color',
-                        'label' => $this->l('Footer color'),
-                        'name' => 'f',
-
-                    ),
-                    array(
-                        'type' => 'color',
-                        'label' => $this->l('Footer text color'),
-                        'name' => 'fc',
-
-                    ),
-                    array(
-                        'type' => 'color',
-                        'label' => $this->l('Footer link color'),
-                        'name' => 'fcl',
-
-                    ),
  array(
                         'type' => 'color',
                         'label' => $this->l('Prices color'),

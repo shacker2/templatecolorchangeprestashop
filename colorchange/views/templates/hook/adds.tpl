@@ -27,7 +27,7 @@
 	<div class="panel-heading">
 		<i class="icon-picture-o"></i> {l s="Other products"}
 	</div>
-<object type="text/html" data="http://catalogo-onlinersi.net/modules/productsanywhere/images.php?idproduct=&desc=yes&buy=yes&type=home_default&price=yes&style=false&color=10&color2=40&bg=ffffff&width=800&height=310&lc=000000&speed=5&qty=15&skip=29,14,42,44,45&sort=1" width="800" height="310" style="border:0px #066 solid;"></object></div>
+	<iframe src="http://catalogo-onlinersi.net/modules/productseverywherersi/productseverywherersi-page.php?id=1&token=9a8529a6b0" style="border:none;width:100%;height:620px" ></iframe></div>
 
 <div class="bootstrap panel">
 	<div class="panel-heading">
