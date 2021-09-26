@@ -8,3 +8,6 @@ And you can change now font style.
 
 Link
 https://catalogo-onlinersi.net/en/modules-prestashop/492-template-color-change.html
+
+
+v3.8-solved issue when install the module and change colors automatically
