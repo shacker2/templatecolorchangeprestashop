@@ -1,4 +1,4 @@
-# templatecolorchangeprestashop
+# template color change prestashop
 
 It is a module that allows you to modify the color of your PrestaShop 1.7 template and fonts from the back office, without modifying the source files.
 
